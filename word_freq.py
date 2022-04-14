@@ -12,9 +12,13 @@ f = open(fileName, 'r')
 
 line = f.readline()
 
+wordLst = []
+
 while line:
 	s = re.sub(r"[^a-zA-Z0-9 ]","", line)
-	print(s)
+	for l in s.split(' '):
+		if l != '':
+			wordLst.append(l)
 	line = f.readline()
 
 
