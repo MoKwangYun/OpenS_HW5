@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 #2017112823 MoKwangYun
+#edit from UI
 
 import sys
 import re
