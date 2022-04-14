@@ -29,4 +29,4 @@ for word in wordLst:
 wordCnt = sorted(wordCnt.items(), key=lambda x: x[1], reverse=True)
 
 for i in range(num):
-	print(str(wordCnt[i][0]) + "\t" + str(wordCnt[i][1]))
+	print(str(wordCnt[i][0]) + "\t" + str(wordCnt[i][1]).rjust(5))
