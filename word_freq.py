@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 #2017112823 MoKwangYun
 #edit from UI
+#git pull(edit from UI - check)
 
 import sys
 import re
