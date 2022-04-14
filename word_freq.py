@@ -21,4 +21,12 @@ while line:
 			wordLst.append(l)
 	line = f.readline()
 
+wordCnt = {}
+for word in wordLst:
+	try: wordCnt[word] += 1
+	except: wordCnt[word] = 1
 
+wordCnt = sorted(wordCnt.items(), key=lambda x: x[1], reverse=True)
+
+for i in range(num):
+	print(str(wordCnt[i][0]) + "\t" + str(wordCnt[i][1]))
