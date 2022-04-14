@@ -29,4 +29,4 @@ for word in wordLst:
 wordCnt = sorted(wordCnt.items(), key=lambda x: x[1], reverse=True)
 
 for i in range(num):
-	print("{:10}".format(str(wordCnt[i][0])) + str(wordCnt[i][1]).rjust(5))
+	print("{:10}".format(str(wordCnt[i][0])) + "%5s"%str(wordCnt[i][1]))
